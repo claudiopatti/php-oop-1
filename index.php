@@ -3,13 +3,28 @@
 class Movie {
 
     public $title;         //string
+    public $director;      //string
     public $genre;         //array-string
     public $actor;         //array
     public $language;      //array-string
-    public $director;      //string
+
+    function __construct($title, $director, $genre) {
+        $this->title = $title;
+        $this->director = $director;
+        $this->genre = $genre;
+
+    }
 }
 
-$cesaroni = new Movie();
+
+$director = 'Francesco Vicario';
+$genre = [
+    'comedy',
+    'drama',
+    'romantic'
+];
+
+$cesaroni = new Movie('i cesaroni', $director, $genre);
 
 var_dump($cesaroni);
 
