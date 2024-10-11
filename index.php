@@ -10,10 +10,10 @@ class Movie {
     public $language;      //array-string
 
     function __construct($title, $director, $genre, $year) {
-        $this->title = $title;
+        $this->setTitle($title);
         $this->director = $director;
         $this->genre = $genre;
-        $this->year = $year;
+        $this->setYear($year);
 
     }
 
@@ -56,7 +56,17 @@ $genre = [
 
 $cesaroni = new Movie('i cesaroni', $director, $genre, 2006);
 
+$genre = [
+    'comedy',
+    'baby',
+    'romantic'
+];
+
+$cars = new Movie('cars', 'John Lasseter', $genre, 2008);
+
+
 var_dump($cesaroni);
+var_dump($cars);
 
 
 
