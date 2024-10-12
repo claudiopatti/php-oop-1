@@ -27,7 +27,7 @@ class Movie {
             $this->title = $title;
         }
         else {
-            'error';
+            echo 'errore nel titolo';
         }
     }
 
@@ -41,7 +41,7 @@ class Movie {
             $this->year = $year;
         }
         else {
-            'error';
+             echo "errore nell' anno";
         }
     }
 };
